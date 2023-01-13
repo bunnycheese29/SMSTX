@@ -1,0 +1,42 @@
+.main-visual__txt {
+  position: absolute;
+}
+.main-visual__txt img {
+  display: absolute;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+}
+.main-visual__txt h2 {
+  position: absolute;
+  top: 32%;
+  left: 15%;
+  font-size: 80px;
+  font-weight: 500;
+  color: white;
+}
+.main-visual__txt h2:before {
+  display: block;
+  position: absolute;
+  bottom: 200px;
+  content: "";
+  width: 70px;
+  height: 5px;
+  background-color: red;
+}
+.main-visual__txt p {
+  position: absolute;
+  top: 560px;
+  left: 320px;
+  color: white;
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.arrow .material-icons {
+  position: absolute;
+  left: 600px;
+  top: 400px;
+  color: white;
+  font-size: 30px;
+}/*# sourceMappingURL=main.css.map */
