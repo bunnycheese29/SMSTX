@@ -113,8 +113,97 @@
   font-weight: 300;
 }
 
+.business .list1 a::before {
+  content: "";
+  display: block;
+  width: 20%;
+  height: 420px;
+  background-color: rgba(0, 0, 0, 0);
+  position: absolute;
+  transition: background-color 0.25s ease;
+}
+.business .list1 a:hover::before {
+  background-color: rgb(255, 136, 1);
+  background-image: url(../images/main/hover01.png);
+  background-repeat: no-repeat;
+  background-position: left 50% top 210px;
+}
+.business .list2 a::before {
+  content: "";
+  display: block;
+  width: 20%;
+  height: 420px;
+  background-color: rgba(0, 0, 0, 0);
+  position: absolute;
+  transition: background-color 0.25s ease;
+}
+.business .list2 a .hover {
+  display: none;
+}
+.business .list2 a:hover::before {
+  background-color: rgb(255, 136, 1);
+  background-image: url(../images/main/hover02.png);
+  background-repeat: no-repeat;
+  background-position: left 50% top 210px;
+}
+.business .list3 a::before {
+  content: "";
+  display: block;
+  width: 20%;
+  height: 420px;
+  background-color: rgba(0, 0, 0, 0);
+  position: absolute;
+  transition: background-color 0.25s ease;
+}
+.business .list3 a .hover {
+  display: none;
+}
+.business .list3 a:hover::before {
+  background-color: rgb(255, 136, 1);
+  background-image: url(../images/main/hover03.png);
+  background-repeat: no-repeat;
+  background-position: left 50% top 210px;
+}
+.business .list4 a::before {
+  content: "";
+  display: block;
+  width: 20%;
+  height: 420px;
+  background-color: rgba(0, 0, 0, 0);
+  position: absolute;
+  transition: background-color 0.25s ease;
+}
+.business .list4 a .hover {
+  display: none;
+}
+.business .list4 a:hover::before {
+  background-color: rgb(255, 136, 1);
+  background-image: url(../images/main/hover04.png);
+  background-repeat: no-repeat;
+  background-position: left 50% top 210px;
+}
+.business .list5 a::before {
+  content: "";
+  display: block;
+  width: 20.1207243461%;
+  height: 420px;
+  background-color: rgba(0, 0, 0, 0);
+  position: absolute;
+  transition: background-color 0.25s ease;
+}
+.business .list5 a .hover {
+  display: none;
+}
+.business .list5 a:hover::before {
+  background-color: rgb(255, 136, 1);
+  background-image: url(../images/main/hover05.png);
+  background-repeat: no-repeat;
+  background-position: left 55% top 210px;
+}
+
 .news .container {
-  height: 500px;
+  height: 600px;
+  padding-top: 0;
   line-height: 5;
   color: white;
   width: 100%;
@@ -123,15 +212,14 @@
   justify-content: space-between;
 }
 .news .container .contents {
-  font-size: 14px;
+  font-size: 16px;
 }
 .news .container .contents > li {
-  padding-right: 200px;
+  padding-right: 300px;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 .news .container .contents > li > a {
-  padding-right: 180px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -140,11 +228,16 @@
   display: block;
   content: "";
   height: 1px;
-  width: 400px;
+  width: 500px;
   background-color: rgba(255, 255, 255, 0.432);
 }
+.news .container .contents > li > a:after {
+  display: block;
+  background-image: url(../images/main/arrow.png);
+  background-repeat: no-repeat;
+  background-position: left 50% top 50%;
+}
 .news .container .announcement {
-  padding-right: 10px;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -164,7 +257,7 @@
   display: block;
   content: "";
   height: 1px;
-  width: 400px;
+  width: 500px;
   background-color: rgba(255, 255, 255, 0.432);
 }
 .news .container .document {
@@ -181,6 +274,9 @@
   font-size: 30px;
 }
 
+.ask {
+  background-color: rgb(247, 247, 247);
+}
 .ask .container {
   height: auto;
   display: flex;
@@ -205,11 +301,15 @@
 }
 .ask .container .faq {
   display: flex;
-  width: 50%;
+  width: 49.9%;
+  background-color: #fff;
+  padding: 50px 0;
 }
 .ask .container .customer {
   display: flex;
-  width: 50%;
+  width: 49.9%;
+  background-color: white;
+  padding: 50px 0;
 }
 
 .aboutUs .container .title-box {

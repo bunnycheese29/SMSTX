@@ -100,7 +100,6 @@
       .area {
         display: flex;
         position: relative;
-
         .text {
           position: relative;
           display: flex;
@@ -115,10 +114,120 @@
     }
   }
 }
+.business {
+  .list1 {
+    a {
+      &::before {
+        content: "";
+        display: block;
+        width: calc(100% / 5);
+        height: 420px;
+        background-color: rgba(0, 0, 0, 0);
+        position: absolute;
+        transition: background-color 0.25s ease;
+      }
+      &:hover::before {
+        background-color: rgb(255, 136, 1);
+        background-image: url(../images/main/hover01.png);
+        background-repeat: no-repeat;
+        background-position: left 50% top 210px;
+      }
+    }
+  }
+  .list2 {
+    a {
+      &::before {
+        content: "";
+        display: block;
+        width: calc(100% / 5);
+        height: 420px;
+        background-color: rgba(0, 0, 0, 0);
+        position: absolute;
+        transition: background-color 0.25s ease;
+      }
+      .hover {
+        display: none;
+      }
+      &:hover::before {
+        background-color: rgb(255, 136, 1);
+        background-image: url(../images/main/hover02.png);
+        background-repeat: no-repeat;
+        background-position: left 50% top 210px;
+      }
+    }
+  }
+  .list3 {
+    a {
+      &::before {
+        content: "";
+        display: block;
+        width: calc(100% / 5);
+        height: 420px;
+        background-color: rgba(0, 0, 0, 0);
+        position: absolute;
+        transition: background-color 0.25s ease;
+      }
+      .hover {
+        display: none;
+      }
+      &:hover::before {
+        background-color: rgb(255, 136, 1);
+        background-image: url(../images/main/hover03.png);
+        background-repeat: no-repeat;
+        background-position: left 50% top 210px;
+      }
+    }
+  }
+  .list4 {
+    a {
+      &::before {
+        content: "";
+        display: block;
+        width: calc(100% / 5);
+        height: 420px;
+        background-color: rgba(0, 0, 0, 0);
+        position: absolute;
+        transition: background-color 0.25s ease;
+      }
+      .hover {
+        display: none;
+      }
+      &:hover::before {
+        background-color: rgb(255, 136, 1);
+        background-image: url(../images/main/hover04.png);
+        background-repeat: no-repeat;
+        background-position: left 50% top 210px;
+      }
+    }
+  }
+  .list5 {
+    a {
+      &::before {
+        content: "";
+        display: block;
+        width: calc(100% / 4.97);
+        height: 420px;
+        background-color: rgba(0, 0, 0, 0);
+        position: absolute;
+        transition: background-color 0.25s ease;
+      }
+      .hover {
+        display: none;
+      }
+      &:hover::before {
+        background-color: rgb(255, 136, 1);
+        background-image: url(../images/main/hover05.png);
+        background-repeat: no-repeat;
+        background-position: left 55% top 210px;
+      }
+    }
+  }
+}
 
 .news {
   .container {
-    height: 500px;
+    height: 600px;
+    padding-top: 0;
     line-height: 5;
     color: white;
     width: 100%;
@@ -126,15 +235,13 @@
     flex-direction: row;
     justify-content: space-between;
     .contents {
-      font-size: 14px;
+      font-size: 16px;
       > li {
-        padding-right: 200px;
+        padding-right: 300px;
         overflow: hidden;
         text-overflow: ellipsis;
 
         > a {
-          padding-right: 180px;
-
           white-space: nowrap;
           overflow: hidden;
           text-overflow: ellipsis;
@@ -143,14 +250,19 @@
             display: block;
             content: "";
             height: 1px;
-            width: 400px;
+            width: 500px;
             background-color: rgba(255, 255, 255, 0.432);
+          }
+          &:after {
+            display: block;
+            background-image: url(../images/main/arrow.png);
+            background-repeat: no-repeat;
+            background-position: left 50% top 50%;
           }
         }
       }
     }
     .announcement {
-      padding-right: 10px;
       position: relative;
       display: flex;
       flex-direction: column;
@@ -170,7 +282,7 @@
           display: block;
           content: "";
           height: 1px;
-          width: 400px;
+          width: 500px;
           background-color: rgba(255, 255, 255, 0.432);
         }
       }
@@ -192,6 +304,7 @@
 }
 
 .ask {
+  background-color: rgb(247, 247, 247);
   .container {
     height: auto;
     display: flex;
@@ -215,11 +328,15 @@
     }
     .faq {
       display: flex;
-      width: 50%;
+      width: 49.9%;
+      background-color: #fff;
+      padding: 50px 0;
     }
     .customer {
       display: flex;
-      width: 50%;
+      width: 49.9%;
+      background-color: white;
+      padding: 50px 0;
     }
   }
 }
